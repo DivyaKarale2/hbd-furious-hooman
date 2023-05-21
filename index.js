@@ -1,104 +1,3 @@
-/*// Set the date we're counting down to
-
-var countDownDate = new Date("june 02, 2023 00:00:00").getTime();
-
- 
-
-// Update the count down every 1 second
-
-var x = setInterval(function() {
-
- 
-
-  // Get today's date and time
-
-  var now = new Date().getTime();
-
- 
-
-  // Find the distance between now and the count down date
-
-  var distance = countDownDate - now;
-
- 
-
-  // Time calculations for days, hours, minutes and seconds
-
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
- 
-
-  // Display the result in the element with id="demo"
-
-     document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-
-    + minutes + "m " + seconds + "s";
-
-    // document.getElementById("demo").innerHTML = days + "     " + hours + "     "
-
-    // + minutes + "      " + seconds + "       "+ "Days "+"Hours "+"Minutes "+"Seconds ";
-
-  
-
- 
-
-  // If the count down is finished, write some text or redirect to another page
-
-  if (distance < 0) {
-
-    clearInterval(x);
-
-    //document.getElementById("demo").innerHTML = "Click for Surprise";
-
-    window.location="surprise.html"
-
-   
-
-  }
-
-}, 1000);*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let daysItem = document.querySelector("#days");
 
 let hoursItem = document.querySelector("#hours");
@@ -106,8 +5,6 @@ let hoursItem = document.querySelector("#hours");
 let minItem = document.querySelector("#min");
 
 let secItem = document.querySelector("#sec");
-
- 
 
  
 
@@ -149,7 +46,7 @@ let countDown = () => {
 
  
 
-  // If the count down is finished, write some text or redirect to another page
+  // redirect to another page after count down is finished
 
   if (myDate < 0) {
 
@@ -160,12 +57,6 @@ let countDown = () => {
 }
 
 }
-
- 
-
- 
-
- 
 
  
 
